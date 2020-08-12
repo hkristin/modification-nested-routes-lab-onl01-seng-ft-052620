@@ -3,8 +3,7 @@
   <%= f.text_field :title %><br>
   <%= f.hidden_field :artist_id %>
   <%= f.label :artist_name %>
-  <%= display_name(@song, @path) %>
-  <%= artist_select(@song, @path) %><br>
+
 
   <%= f.submit %>
 <% end %>
