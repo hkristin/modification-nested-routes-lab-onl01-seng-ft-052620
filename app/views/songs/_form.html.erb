@@ -2,8 +2,9 @@
   <%= f.label :title %>
   <%= f.text_field :title %><br>
   <%= f.label :artist_name %>
-  <%= display_name(@song, @path) %>
+  <%= display_name(@song, @path) if @song.artist_id%>
   <%= artist_select(@song, @path) %><br>
+  <br />
 
   <%= f.submit %>
 <% end %>
