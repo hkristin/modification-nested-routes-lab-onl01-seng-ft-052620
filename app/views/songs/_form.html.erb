@@ -2,7 +2,6 @@
   <%= f.label :title %>
   <%= f.text_field :title %><br>
   <%= f.label :artist_name %>
-  <%= display_name(@song, @path) %>
   <%= artist_select(@song, @path) if !@song.artist_id %><br>
   <br />
 
